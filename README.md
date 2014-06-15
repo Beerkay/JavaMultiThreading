@@ -8,7 +8,7 @@ for more information.
 
 Contributor
 ----------
-[Z.B. Celik] (http://www.linkedin.com/in/berkaycelik) @author Z.B. Celik <celik.berkay@gmail.com>
+[Z.B. Celik] (http://www.linkedin.com/in/berkaycelik) 
 
 
 Java Multithreading Topics:
