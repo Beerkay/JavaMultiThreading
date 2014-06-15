@@ -8,16 +8,12 @@ for more information.
 
 Contributor
 ----------
-[Z.B. Celik] (http://www.linkedin.com/in/berkaycelik) 
+[Z.B. Celik] (http://www.linkedin.com/in/berkaycelik) @author Z.B. Celik <celik.berkay@gmail.com>
 
 
 Java Multithreading Topics:
 -------------
-
-*Codes with minor comments are from http://www.caveofprogramming.com/youtube/ *
-*also freely available at*
-*https://www.udemy.com/java-multithreading/?couponCode=FREE *
-@author Z.B. Celik <celik.berkay@gmail.com>
+Codes with minor comments are from http://www.caveofprogramming.com/youtube/  also freely available at https://www.udemy.com/java-multithreading/?couponCode=FREE
 
 
 - 1- Java Multithreading: Starting Threads
