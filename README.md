@@ -13,13 +13,12 @@ Contributor
 
 Java Multithreading Topics:
 -------------
-/**
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
- * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
- *
- * @author Z.B. Celik <celik.berkay@gmail.com>
- */
+
+*Codes with minor comments are from http://www.caveofprogramming.com/youtube/ *
+*also freely available at*
+*https://www.udemy.com/java-multithreading/?couponCode=FREE *
+@author Z.B. Celik <celik.berkay@gmail.com>
+
 
 - 1- Java Multithreading: Starting Threads
 - 2- Java Multithreading: Volatile – Basic Thread Communication 
