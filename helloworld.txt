@@ -1,0 +1,41 @@
+
+Java Multithreading
+=============================================================
+This repository will contain all the codes for the ultimate Java multithreading course by John Purcell
+
+See the [Video Tutorials](https://www.udemy.com/java-multithreading/)
+for more information.
+
+Contributor
+----------
+[Z.B. Celik](http://www.linkedin.com/in/berkaycelik) is an NSF post-doctoral fellow at UW working
+jointly between the Computer Science department's [Database Research Group](http://db.cs.washington.edu/) and
+the Astronomy department's [Survey Science Group](http://ssg.astro.washington.edu/).  He received his PhD in
+Astronomy from the University of Washington in 2012.  He is active in the open-source Scientific Python
+community, and actively contributes to and helps maintain several of the core packages in the SciPy ecosystem.
+
+
+Java Multithreading Topics:
+-------------
+/**
+ * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * also freely available at
+ * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ *
+ * @author Z.B. Celik <celik.berkay@gmail.com>
+ */
+
+1- Java Multithreading: Starting Threads
+2- Java Multithreading: Volatile – Basic Thread Communication 
+3- Java Multithreading: Synchronized 
+4- Java Multithreading: Lock Objects 
+5- Java Multithreading: Thread Pools 
+6- Java Multithreading: Countdown Latches 
+7- Java Multithreading: Producer-Consumer 
+8- Java Multithreading: Wait and Notify 
+9- Java Multithreading: Low-Level Producer-Consumer 
+10- Java Multithreading: Re-entrant Locks 
+11- Java Multithreading: Deadlock 
+12- Java Multithreading: Semaphores 
+13- Java Multithreading: Callable and Future 
+14- Java Multithreading: Interrupting Threads 
