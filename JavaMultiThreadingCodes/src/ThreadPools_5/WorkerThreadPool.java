@@ -8,11 +8,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
- * This is the implementation of LockObjects_4.Worker with threadPool
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * This is the implementation of {@link LockObjects_4.Worker} with threadPool
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */

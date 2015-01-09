@@ -1,14 +1,16 @@
 package ProducerConsumer_7;
 
 /**
- * producer-consumer pattern in Java using the ArrayBlockingQueue Java class.
+ * Producer-Consumer pattern in Java using the {@link java.util.concurrent
+ * .ArrayBlockingQueue} Java class.
+ * <br><br>
  * Producer-Consumer is the situation where one or more threads are producing
  * data items and adding them to a shared data store of some kind while one or
  * more other threads process those items, removing them from the data store.
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
@@ -19,14 +21,16 @@ import java.util.concurrent.BlockingQueue;
 public class App {
 
     /**
-     * Thread safe implementation of Queue data structure so you do not need to
-     * worry about synchronization. More specifically BlockingQueue
+     * Thread safe implementation of {@link java.util.Queue} data structure so
+     * you do not need to worry about synchronization.
+     * More specifically {@link java.util.concurrent.BlockingQueue}
      * implementations are thread-safe. All queuing methods are atomic in nature
      * and use internal locks or other forms of concurrency control. If
      * BlockingQueue is not used queue is shared data structure either
-     * sychronized or wait() notify() (see Course 8) should be used. Java 1.5
-     * introduced a new concurrency library (in the java.util.concurrent
-     * package) which was designed to provide a higher level abstraction over
+     * {@code synchronized} or {@code wait() notify()} (see Course 8) should be
+     * used.
+     * Java 1.5 introduced a new concurrency library {@link java.util.concurrent}
+     * which was designed to provide a higher level abstraction over
      * the wait/notify mechanism.
      */
     private static BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);

@@ -2,10 +2,9 @@ package StartingThreads_1;
 
 /**
  * Starting Threads using Runnable Interface
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
- * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
+ * also freely available at: <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */

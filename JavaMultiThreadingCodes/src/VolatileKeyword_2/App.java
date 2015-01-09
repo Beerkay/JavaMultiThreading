@@ -1,12 +1,12 @@
 package VolatileKeyword_2;
 
 /**
- * Volatile Keyword, “… the volatile modifier guarantees that any thread that
- * reads a field will see the most recently written value.” - Josh Bloch
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * Volatile Keyword, <em>“… the volatile modifier guarantees that any thread that
+ * reads a field will see the most recently written value.”</em> - Josh Bloch
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */

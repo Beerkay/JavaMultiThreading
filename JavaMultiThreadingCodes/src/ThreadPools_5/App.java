@@ -2,10 +2,10 @@ package ThreadPools_5;
 
 /**
  * ThreadPool ("number of workers in a factory")
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */

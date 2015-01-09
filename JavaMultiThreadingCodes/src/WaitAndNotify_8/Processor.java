@@ -26,7 +26,8 @@ public class Processor {
     /**
      * public synchronized void getSomething(){ this.hello = "hello World"; }
      * public void getSomething(){ synchronized(this){ this.hello = "hello
-     * World"; } , two code blocks by specification, functionally identical.
+     * World"; } }
+     * two code blocks by specification, functionally identical.
      */
     public void produce() throws InterruptedException {
         synchronized (this) {
@@ -45,6 +46,7 @@ public class Processor {
             System.out.println("Return key pressed.");
             notify();
             Thread.sleep(5000);
+            System.out.println("Consumption done.");
         }
     }
 }
