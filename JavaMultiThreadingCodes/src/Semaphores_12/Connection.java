@@ -15,8 +15,8 @@ public class Connection {
 
     private static Connection instance = new Connection();
     //limit connections to 10
-    //true means whichever the thread call the acquire first gets it first, 
-    //in queue placed firts to obtain the permit.
+    //true means whichever the thread call the acquire first gets it first,
+    //in queue placed first to obtain the permit.
     private Semaphore sem = new Semaphore(10, true);
     private int connections = 0;
 
@@ -34,7 +34,7 @@ public class Connection {
             e1.printStackTrace();
         }
         try {
-            //if doConnect throws and exception is still releases the permit 
+            //if doConnect throws and exception is still releases the permit
             //so we use a separate method here to increase the connections count.
             doConnect();
         } finally {
@@ -55,7 +55,7 @@ public class Connection {
             e.printStackTrace();
         }
         //when exit doConnect method decrement number of connections
-        synchronized (this) {//atamoic
+        synchronized (this) {//atomic
             connections--;
             System.out.println("I'm done " + Thread.currentThread().getName() + " Connection is released , connection count: " + connections);
         }

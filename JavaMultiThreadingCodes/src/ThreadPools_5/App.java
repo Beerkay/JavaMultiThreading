@@ -25,7 +25,7 @@ class Processor implements Runnable {
         System.out.println("Starting: " + id);
         try {
             Thread.sleep(5000);
-        } catch (InterruptedException e) {
+        } catch (InterruptedException ignored) {
         }
         System.out.println("Completed: " + id);
     }
@@ -45,7 +45,7 @@ public class App {
         System.out.println("All tasks submitted.");
         try {
             executor.awaitTermination(1, TimeUnit.DAYS);
-        } catch (InterruptedException e) {
+        } catch (InterruptedException ignored) {
         }
         System.out.println("All tasks completed.");
     }

@@ -70,10 +70,7 @@ public class Worker {
         try {
             thread1.join();
             thread2.join();
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        } catch (InterruptedException ignored) {}
         System.out.println("Count is: " + count);
     }
 }

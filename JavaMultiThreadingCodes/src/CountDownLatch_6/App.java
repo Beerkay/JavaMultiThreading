@@ -45,10 +45,7 @@ class Processor implements Runnable {
 
         try {
             Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        } catch (InterruptedException ignored) {}
         latch.countDown();
     }
 }
@@ -62,7 +59,7 @@ public class App {
             executor.submit(new Processor(latch));
         }
         try {
-            // Application’s main thread waits, till other service threads which are 
+            // Application’s main thread waits, till other service threads which are
             // as an example responsible for starting framework services have completed started all services.
             latch.await();
         } catch (InterruptedException e) {

@@ -14,13 +14,13 @@ public class Processor {
 
     private LinkedList<Integer> list = new LinkedList<>();
     private final int LIMIT = 10;
-    private Object lock = new Object();
+    private final Object lock = new Object();
 
     public void produce() throws InterruptedException {
         int value = 0;
         while (true) {
             synchronized (lock) {
-                //whenever the threade is notofied starts again from the loop
+                //whenever the thread is notified starts again from the loop
                 while (list.size() == LIMIT) {
                     lock.wait();// wait() is also true
                 }
