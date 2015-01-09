@@ -58,6 +58,8 @@ public class App {
         for (int i = 0; i < 3; i++) {
             executor.submit(new Processor(latch));
         }
+        executor.shutdown();
+
         try {
             // Application’s main thread waits, till other service threads which are
             // as an example responsible for starting framework services have completed started all services.
