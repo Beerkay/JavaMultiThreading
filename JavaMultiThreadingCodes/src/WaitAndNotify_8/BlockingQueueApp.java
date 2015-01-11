@@ -50,7 +50,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author Z.B. Celik <celik.berkay@gmail.com>
  *
  */
-//For the other version of the implementation please check LowLevelProducerConsumer_9.App
+//For the other version of the implementation please check
+// LowLevelProducerConsumer_9.App
 class BlockingQueue<T> {
 
     private Queue<T> queue = new LinkedList<>();
@@ -69,12 +70,12 @@ class BlockingQueue<T> {
         try {
             while (queue.size() == capacity) {
                 System.out.println("queue is full cannot put");
-                notFull.await();//releases lock
+                notFull.await(); //releases lock
             }
 
             queue.add(element);
             System.out.println("Added to the queue " + element);
-            notEmpty.signal();//call waiting thread on same object
+            notEmpty.signal(); //calls waiting thread on the same object
         } finally {
             lock.unlock();
         }
