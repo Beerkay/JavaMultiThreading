@@ -98,6 +98,7 @@ class BlockingQueue<T> {
     }
 }
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class BlockingQueueApp {
 
     public static void main(String[] args) throws InterruptedException {
@@ -109,9 +110,7 @@ public class BlockingQueueApp {
                     while (true) {
                         blockingQueue.put(random.nextInt(10));
                     }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                } catch (InterruptedException ignored) {}
             }
         });
 
@@ -126,9 +125,7 @@ public class BlockingQueueApp {
                     while (true) {
                         blockingQueue.take();
                     }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                } catch (InterruptedException ignored) {}
             }
         });
         t1.start();

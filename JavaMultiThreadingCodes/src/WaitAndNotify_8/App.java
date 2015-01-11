@@ -1,14 +1,15 @@
 package WaitAndNotify_8;
 
 /**
- * wait and notify in Java; low-level multithreading methods of the Object class
+ * {@link Object#wait()} and {@link Object#notify()} in Java; low-level
+ * multi-threading methods of the {@link java.lang.Object} class
  * that allow you to have one or more threads sleeping, only to be woken up by
  * other threads at the right moment. Extremely useful for avoiding those
  * processor-consuming "polling loops".
  *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
@@ -21,9 +22,7 @@ public class App {
             public void run() {
                 try {
                     processor.produce();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                } catch (InterruptedException ignored) {}
             }
         });
 
@@ -32,11 +31,10 @@ public class App {
             public void run() {
                 try {
                     processor.consume();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                } catch (InterruptedException ignored) {}
             }
         });
+
         t1.start();
         t2.start();
         t1.join();

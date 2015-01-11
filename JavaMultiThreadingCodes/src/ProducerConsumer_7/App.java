@@ -18,6 +18,7 @@ import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class App {
 
     /**
@@ -57,7 +58,8 @@ public class App {
 //        t1.join();
 //        t2.join();
 
-        // Pause for 30 seconds and force quitting the app (because we're looping infinitely)
+        // Pause for 30 seconds and force quitting the app (because we're
+        // looping infinitely)
         Thread.sleep(30000);
         System.exit(0);
     }
