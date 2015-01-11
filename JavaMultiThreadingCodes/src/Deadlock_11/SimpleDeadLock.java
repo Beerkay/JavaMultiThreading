@@ -10,8 +10,8 @@ package Deadlock_11;
  */
 public class SimpleDeadLock {
 
-    public static Object lock1 = new Object();
-    public static Object lock2 = new Object();
+    public static final Object lock1 = new Object();
+    public static final Object lock2 = new Object();
     private int index;
 
     public static void main(String[] a) {
@@ -28,7 +28,7 @@ public class SimpleDeadLock {
                 System.out.println("Thread 1: Holding lock 1...");
                 try {
                     Thread.sleep(10);
-                } catch (InterruptedException e) {
+                } catch (InterruptedException ignored) {
                 }
                 System.out.println("Thread 1: Waiting for lock 2...");
                 synchronized (lock2) {
@@ -45,7 +45,7 @@ public class SimpleDeadLock {
                 System.out.println("Thread 2: Holding lock 2...");
                 try {
                     Thread.sleep(10);
-                } catch (InterruptedException e) {
+                } catch (InterruptedException ignored) {
                 }
                 System.out.println("Thread 2: Waiting for lock 1...");
                 synchronized (lock1) {

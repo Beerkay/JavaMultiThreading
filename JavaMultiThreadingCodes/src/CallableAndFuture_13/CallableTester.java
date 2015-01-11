@@ -18,7 +18,7 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
  * Runnable Introduced in Java 1.0 Callable<T> Introduced in Java 1.5 as part of
  * java.util.concurrent library
  *
- * Runnable cannot be parameterized Callable is a parameterized type whose type
+ * Runnable cannot be parametrized Callable is a parametrized type whose type
  * parameter indicates the return type of its run method Classes implementing
  *
  * Runnable needs to implement run() method, classes implementing Callable needs

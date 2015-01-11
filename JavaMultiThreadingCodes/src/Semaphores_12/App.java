@@ -40,7 +40,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         ExecutorService executor = Executors.newCachedThreadPool();
-        for (int i = 0; i < 13; i++) { //200 hundred times will be calleds
+        for (int i = 0; i < 13; i++) { //200 hundred times will be called
             executor.submit(new Runnable() {
                 public void run() {
                     Connection.getInstance().connect();

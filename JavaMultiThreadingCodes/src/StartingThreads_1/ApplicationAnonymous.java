@@ -2,10 +2,10 @@ package StartingThreads_1;
 
 /**
  * Starting threads using the Thread constructor with anonymous classes
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
@@ -20,10 +20,7 @@ public class ApplicationAnonymous {
 
                     try {
                         Thread.sleep(100);
-                    } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                    }
+                    } catch (InterruptedException ignored) {}
                 }
             }
         });

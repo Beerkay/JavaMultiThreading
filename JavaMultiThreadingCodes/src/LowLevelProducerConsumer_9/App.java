@@ -1,15 +1,16 @@
 package LowLevelProducerConsumer_9;
 
 /**
- * How to implement the producer-consumer pattern using "low level" techniques;
+ * How to implement the Producer-Consumer pattern using "low level" techniques;
  * namely, wait, notify and synchronized. This isn't the best way to implement a
- * producer-consumer pattern in Java (see tutorial 7 use of BlockingQueue for
+ * Producer-Consumer pattern in Java
+ * (see tutorial 7 use of {@link java.util.concurrent.BlockingQueue} for
  * the best way); but this tutorial will help you to understand how to use wait
  * and notify.
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
@@ -22,9 +23,7 @@ public class App {
             public void run() {
                 try {
                     processor.produce();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                } catch (InterruptedException ignored) {}
             }
         });
 
@@ -33,14 +32,18 @@ public class App {
             public void run() {
                 try {
                     processor.consume();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                } catch (InterruptedException ignored) {}
             }
         });
+
         t1.start();
         t2.start();
-        t1.join();
-        t2.join();
+//        t1.join();
+//        t2.join();
+
+        // Pause for 30 seconds and force quitting the app (because we're
+        // looping infinitely)
+        Thread.sleep(30000);
+        System.exit(0);
     }
 }

@@ -21,8 +21,8 @@ public class WorkerMethodsSynchronized {
 
     private Random random = new Random();
 
-    private List<Integer> list1 = new ArrayList<Integer>();
-    private List<Integer> list2 = new ArrayList<Integer>();
+    private List<Integer> list1 = new ArrayList<>();
+    private List<Integer> list2 = new ArrayList<>();
 
     /**
      * synchronized, methods use different data (list1 list2) so by synchronized
@@ -78,10 +78,7 @@ public class WorkerMethodsSynchronized {
         try {
             t1.join();
             t2.join();
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        } catch (InterruptedException ignored) {}
 
         long end = System.currentTimeMillis();
 

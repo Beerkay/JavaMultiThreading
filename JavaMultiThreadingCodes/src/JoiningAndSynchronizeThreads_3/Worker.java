@@ -4,12 +4,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * synchronized ("only let one thread in here at a time".) and join ("wait until
+ * {@code synchronized} ("only let one thread in here at a time".) and {@code join} ("wait until
  * thread on which join has called finished") keyword.
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * <br><br>
+ * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
@@ -70,10 +70,7 @@ public class Worker {
         try {
             thread1.join();
             thread2.join();
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        } catch (InterruptedException ignored) {}
         System.out.println("Count is: " + count);
     }
 }

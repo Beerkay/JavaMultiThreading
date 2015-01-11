@@ -53,7 +53,7 @@ public class Runner {
         }
     }
 
-    //firstThreaad runs
+    //firstThread runs
     public void firstThread() throws InterruptedException {
         Random random = new Random();
         for (int i = 0; i < 10000; i++) {

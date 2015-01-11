@@ -31,9 +31,9 @@ public class App {
 
         System.out.println("Starting.");
 
-        ExecutorService executer = Executors.newCachedThreadPool();
+        ExecutorService executor = Executors.newCachedThreadPool();
 
-        Future<?> fu = executer.submit(new Callable<Void>() {
+        Future<?> fu = executor.submit(new Callable<Void>() {
 
             @Override
             public Void call() throws Exception {
@@ -49,11 +49,11 @@ public class App {
             }
         });
 
-        executer.shutdown();
+        executor.shutdown();
         Thread.sleep(500);
-        executer.shutdownNow();
+        executor.shutdownNow();
 
-        executer.awaitTermination(1, TimeUnit.DAYS);
+        executor.awaitTermination(1, TimeUnit.DAYS);
         System.out.println("Finished.");
     }
 
