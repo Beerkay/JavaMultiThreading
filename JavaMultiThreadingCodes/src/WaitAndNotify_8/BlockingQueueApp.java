@@ -47,8 +47,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * safely take out the first connection. This checking and removing will be
  * atomic because we have the lock on the list.
  *
- * @author Z.B. Celik <celik.berkay@gmail.com>
  *
+ * @author Z.B. Celik <celik.berkay@gmail.com>
  */
 //For the other version of the implementation please check
 // LowLevelProducerConsumer_9.App
@@ -86,12 +86,12 @@ class BlockingQueue<T> {
         try {
             while (queue.isEmpty()) {
                 System.out.println("queue is empty, cannot take");
-                notEmpty.await();//releases lock
+                notEmpty.await(); //releases lock
             }
 
             T item = queue.remove();
             System.out.println("Removed to the queue " + item);
-            notFull.signal();//call waiting thread on same object
+            notFull.signal(); //calls waiting thread on same object
             return item;
         } finally {
             lock.unlock();

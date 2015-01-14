@@ -6,10 +6,16 @@ package WaitAndNotify_8;
  * that allow you to have one or more threads sleeping, only to be woken up by
  * other threads at the right moment. Extremely useful for avoiding those
  * processor-consuming "polling loops".
- *
- * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
+ * <br><br>
+ * Codes with minor comments are from
+ * <a href="http://www.caveofprogramming.com/youtube/">
+ * <em>http://www.caveofprogramming.com/youtube/</em>
+ * </a>
+ * <br>
  * also freely available at
- * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * <a href="https://www.udemy.com/java-multithreading/?couponCode=FREE">
+ *     <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * </a>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
