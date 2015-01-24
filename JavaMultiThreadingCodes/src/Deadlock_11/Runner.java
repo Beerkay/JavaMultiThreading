@@ -1,18 +1,25 @@
- package Deadlock_11;
+package Deadlock_11;
 
-/**
- * Deadlocks
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
- * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
- *
- * @author Z.B. Celik <celik.berkay@gmail.com>
- */
 import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * <a href="https://wikipedia.org/wiki/Deadlock">Deadlock</a>
+ * <br><br>
+ * Codes with minor comments are from
+ * <a href="http://www.caveofprogramming.com/youtube/">
+ * <em>http://www.caveofprogramming.com/youtube/</em>
+ * </a>
+ * <br>
+ * also freely available at
+ * <a href="https://www.udemy.com/java-multithreading/?couponCode=FREE">
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * </a>
+ *
+ * @author Z.B. Celik <celik.berkay@gmail.com>
+ */
+@SuppressWarnings("InfiniteLoopStatement")
 public class Runner {
 
     private Account acc1 = new Account();
@@ -38,15 +45,9 @@ public class Runner {
                 gotFirstLock = firstLock.tryLock();
                 gotSecondLock = secondLock.tryLock();
             } finally {
-                if (gotFirstLock && gotSecondLock) {
-                    return;
-                }
-                if (gotFirstLock) {
-                    firstLock.unlock();
-                }
-                if (gotSecondLock) {
-                    secondLock.unlock();
-                }
+                if (gotFirstLock && gotSecondLock) return;
+                else if (gotFirstLock) firstLock.unlock();
+                else if (gotSecondLock) secondLock.unlock();
             }
             // Locks not acquired
             Thread.sleep(1);

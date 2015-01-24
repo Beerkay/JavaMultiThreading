@@ -1,27 +1,31 @@
 package InterruptingThreads14;
 
-import java.util.Random;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
- * how to interrupt running threads in Java using the built-in thread
- * interruption mechanism.
- *
- * Source:http://www.javamex.com/tutorials/threads/thread_interruption.shtml
- * Incidentally, it is important not to confuse thread interruption with either
+ * <b>How to interrupt running threads in Java using the built-in thread
+ * interruption mechanism.</b>
+ * <br><br>
+ * Source:
+ * <a href="http://www.javamex.com/tutorials/threads/thread_interruption.shtml">
+ * http://www.javamex.com/tutorials/threads/thread_interruption.shtml</a>
+ * <p>
+ * Incidentally, it is important NOT to confuse thread interruption with either
  * software interrupts (where the CPU automatically interrupts the current
  * instruction flow in order to call a registered piece of code periodically— as
  * in fact happens to drive the thread scheduler) and hardware interrupts (where
  * the CPU automatically performs a similar task in response to some hardware
  * signal).
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * <br><br>
+ * Codes with minor comments are from
+ * <a href="http://www.caveofprogramming.com/youtube/">
+ * <em>http://www.caveofprogramming.com/youtube/</em>
+ * </a>
+ * <br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <a href="https://www.udemy.com/java-multithreading/?couponCode=FREE">
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * </a>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
@@ -37,20 +41,30 @@ public class App {
 
             @Override
             public Void call() throws Exception {
-                Random ran = new Random();
+
                 for (int i = 0; i < 1E8; i++) {
                     if (Thread.currentThread().isInterrupted()) {
-                        System.out.println("Interrupted!");
+                        System.out.printf("Interrupted at %d !!!", i);
                         break;
                     }
-                    Math.sin(ran.nextDouble());
                 }
+
                 return null;
             }
         });
 
         executor.shutdown();
         Thread.sleep(500);
+
+        /*
+        in this example, there are different ways you can interrupt a thread
+        execution.
+         */
+
+        //JavaDoc: http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html#cancel-boolean-
+//        fu.cancel(true);
+
+        //JavaDoc: http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html#shutdownNow--
         executor.shutdownNow();
 
         executor.awaitTermination(1, TimeUnit.DAYS);

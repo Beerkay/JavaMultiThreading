@@ -1,15 +1,21 @@
 package LowLevelProducerConsumer_9;
 
-/**
- * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
- * also freely available at
- * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
- *
- * @author Z.B. Celik <celik.berkay@gmail.com>
- */
 import java.util.LinkedList;
 import java.util.Random;
 
+/**
+ * Codes with minor comments are from
+ * <a href="http://www.caveofprogramming.com/youtube/">
+ * <em>http://www.caveofprogramming.com/youtube/</em>
+ * </a>
+ * <br>
+ * also freely available at
+ * <a href="https://www.udemy.com/java-multithreading/?couponCode=FREE">
+ * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * </a>
+ *
+ * @author Z.B. Celik <celik.berkay@gmail.com>
+ */
 @SuppressWarnings("InfiniteLoopStatement")
 public class Processor {
 

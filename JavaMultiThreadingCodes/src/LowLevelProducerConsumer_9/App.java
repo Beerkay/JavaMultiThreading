@@ -8,9 +8,15 @@ package LowLevelProducerConsumer_9;
  * the best way); but this tutorial will help you to understand how to use wait
  * and notify.
  * <br><br>
- * Codes with minor comments are from <em>http://www.caveofprogramming.com/youtube/</em><br>
+ * Codes with minor comments are from
+ * <a href="http://www.caveofprogramming.com/youtube/">
+ * <em>http://www.caveofprogramming.com/youtube/</em>
+ * </a>
+ * <br>
  * also freely available at
- * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * <a href="https://www.udemy.com/java-multithreading/?couponCode=FREE">
+ *     <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * </a>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */

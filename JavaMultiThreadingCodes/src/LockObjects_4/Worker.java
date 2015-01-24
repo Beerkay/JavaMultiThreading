@@ -10,10 +10,16 @@ import java.util.Random;
  * making the method synchronized or making an object inside the method
  * synchronized, By defining two different locks we say that one thread may
  * execute the stageOne while other executes stageTwo.
- *
- * Codes with minor comments are from http://www.caveofprogramming.com/youtube/
+ * <br><br>
+ * Codes with minor comments are from
+ * <a href="http://www.caveofprogramming.com/youtube/">
+ * <em>http://www.caveofprogramming.com/youtube/</em>
+ * </a>
+ * <br>
  * also freely available at
- * https://www.udemy.com/java-multithreading/?couponCode=FREE
+ * <a href="https://www.udemy.com/java-multithreading/?couponCode=FREE">
+ *     <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
+ * </a>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
