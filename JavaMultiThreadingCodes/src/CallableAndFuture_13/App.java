@@ -63,7 +63,6 @@ public class App {
             System.out.println("Result is: " + future.get());
 
         } catch (InterruptedException ignored) {
-
         } catch (ExecutionException e) {
             TimeoutException ex = (TimeoutException) e.getCause();
             System.out.println(ex.getMessage());
