@@ -1,16 +1,16 @@
 
-#Java Multithreading
+# Java Multithreading
 This repository will contain all the codes for the ultimate Java multithreading course by John Purcell
 
 See the [Video Tutorials](https://www.udemy.com/java-multithreading/)
 for more information.
 
-##Contributors
+## Contributors
 [Z.B. Celik] (http://www.linkedin.com/in/berkaycelik)  
 [@IOAyman] (https://twitter.com/IOAyman)
 
 
-##Java Multithreading Topics:
+## Java Multithreading Topics:
 Codes with minor comments are from http://www.caveofprogramming.com/youtube/  also freely available at https://www.udemy.com/java-multithreading/?couponCode=FREE
 
 
