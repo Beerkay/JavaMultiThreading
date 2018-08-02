@@ -1,18 +1,11 @@
 
 # Java Multithreading
-This repository will contain all the codes for the ultimate Java multithreading course by John Purcell
+This repository contains all the codes required for the ultimate Java multithreading course (by John Purcell)
 
-See the [Video Tutorials](https://www.udemy.com/java-multithreading/)
+See the course content from [here](https://www.udemy.com/java-multithreading/) or [here](http://www.caveofprogramming.com/youtube/)
 for more information.
 
-## Contributors
-[Z.B. Celik] (http://www.linkedin.com/in/berkaycelik)  
-[@IOAyman] (https://twitter.com/IOAyman)
-
-
 ## Java Multithreading Topics:
-Codes with minor comments are from http://www.caveofprogramming.com/youtube/  also freely available at https://www.udemy.com/java-multithreading/?couponCode=FREE
-
 
 - 1- Java Multithreading: Starting Threads
 - 2- Java Multithreading: Volatile – Basic Thread Communication
@@ -28,3 +21,8 @@ Codes with minor comments are from http://www.caveofprogramming.com/youtube/  al
 - 12- Java Multithreading: Semaphores
 - 13- Java Multithreading: Callable and Future
 - 14- Java Multithreading: Interrupting Threads
+
+
+## Contributors
+[Z. Berkay Celik] (https://twitter.com/ZBerkayCelik)  
+[@IOAyman] (https://twitter.com/IOAyman)
