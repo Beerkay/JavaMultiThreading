@@ -3,7 +3,6 @@
 This repository contains all the codes required for the ultimate Java multithreading course (by John Purcell)
 
 See the course content from [here](https://www.udemy.com/java-multithreading/) or [here](http://www.caveofprogramming.com/youtube/)
-for more information.
 
 ## Java Multithreading Topics:
 
