@@ -23,6 +23,6 @@ This repository contains all the codes required for the ultimate Java multithrea
 
 
 ## Contributors
-[Z. Berkay Celik](https://twitter.com/ZBerkayCelik) [Twitter](https://twitter.com/ZBerkayCelik)
+[Z. Berkay Celik](https://twitter.com/ZBerkayCelik)
 
 [@IOAyman](https://twitter.com/IOAyman)
