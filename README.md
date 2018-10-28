@@ -1,6 +1,5 @@
-
 # Java Multithreading
-This repository contains all the codes required for the ultimate Java multithreading course. We recommend the codes for those interested in understanding the multithreading. The code is written in Java and the topics are numbered by following the lecture content of John Purcell's Java-MultiThreading (https://caveofprogramming.teachable.com/p/java-multithreading) course.
+This repository contains all the codes required for the ultimate Java multithreading course. We recommend the codes for those interested in understanding the multithreading. The code is written in Java and the topics are numbered by following the lecture content of John Purcell's [Java-MultiThreading](https://caveofprogramming.teachable.com/p/java-multithreading) course.
 
 
 ## Java Multithreading Topics:
